@@ -31,6 +31,9 @@ const strawberry = {
   productId: 3,
   image: "../images/strawberry.jpg"
 }
+products[0] = cherry;
+products[1] = orange;
+products[2] = strawberry;
 /* Images provided in /images folder. All images from Unsplash.com
    - cherry.jpg by Mae Mu
    - orange.jpg by Mae Mu

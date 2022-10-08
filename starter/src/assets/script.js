@@ -8,6 +8,7 @@ const products = [];
    - productId: unique id for the product (number)
    - image: picture of product (url string)
 */
+let totalPaid = 30;
 const cherry = {
   name: "Cherry",
   price: 10,

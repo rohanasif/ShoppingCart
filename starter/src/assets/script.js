@@ -71,7 +71,7 @@ function decreaseQuantity(Identity){
   product.quantity -= 1
   if(product.quantity == 0) {
     cart.splice(cart.indexOf(product), 1);
-  };
+  }
 }
 
 function removeProductFromCart(Indentity){
@@ -86,7 +86,7 @@ function removeProductFromCart(Indentity){
 */
 function cartTotal(){
   let sum = 0;
-  for(let i=0;i<3;i++){
+  for(let i=0;i<cart.length;i++){
     let productPrice = cart[i].price;
     let productQuantity = cart[i].quantity;
     sum+=(productPrice*productQuantity);

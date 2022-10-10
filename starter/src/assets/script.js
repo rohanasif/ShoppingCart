@@ -86,11 +86,9 @@ function removeProductFromCart(Indentity){
 */
 function cartTotal(){
   let sum = 0;
-  for(let i=0;i<cart.length;i++){
-    let productPrice = cart[i].price;
-    let productQuantity = cart[i].quantity;
-    sum+=(productPrice*productQuantity);
-  }
+  cart.forEach(function(item) {
+    sum += item.price * item.quantity;
+  })
   return sum;
 }
 /* Create a function named cartTotal that has no parameters
